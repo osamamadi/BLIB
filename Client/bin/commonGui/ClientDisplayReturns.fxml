@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="657.0" prefWidth="920.0" style="-fx-background-color: #d9d9d9; -fx-padding: 20; -fx-border-color: #2b4356; -fx-border-width: 10px; -fx-border-radius: 10px;" stylesheets="@../commonGui/style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="commonGui.ClientDisplayReturnsController">
+    <children>
+        <TextField fx:id="txtBorrowId" layoutX="380.0" layoutY="216.0" prefWidth="150.0" promptText="Enter ID" style="-fx-font-size: 14px; -fx-padding: 5px; -fx-border-radius: 5px; -fx-border-color: #cccccc;" />
+
+   
+        
+          <TableView fx:id="ReturnsTable" layoutX="73.0" layoutY="261.0" prefHeight="314.0" prefWidth="824.0" style=" -fx-border-radius: 5px; -fx-border-color: #cccccc;">
+    <columns>
+        <TableColumn fx:id="BorrowIdColumn" prefWidth="100.0" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: white; -fx-background-color: #34495e;" text="Borrow ID" />
+        <TableColumn fx:id="BorrowDateColumn" prefWidth="180.0" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: white; -fx-background-color: #34495e;" text="Borrow Date" />
+        <TableColumn fx:id="DueDateColumn" prefWidth="180.0" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: white; -fx-background-color: #34495e;" text="Due Date" />
+        <TableColumn fx:id="ActualReturnDateColumn" prefWidth="180.0" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: white; -fx-background-color: #34495e;" text="Actual Return Date" />
+        <TableColumn fx:id="IsLate" prefWidth="180.0" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: white; -fx-background-color: #34495e;" text="Is Late" />
+    </columns>
+</TableView>
+      <Label layoutX="328.0" layoutY="131.0" prefHeight="54.0" prefWidth="287.0" text="Returned Books" wrapText="true">
+         <font>
+            <Font name="Footlight MT Light" size="44.0" />
+         </font>
+      </Label>
+      <Label layoutX="270.0" layoutY="220.0" prefHeight="23.0" prefWidth="99.0" text="Borrow ID:" wrapText="true">
+         <font>
+            <Font name="Footlight MT Light" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSearch" layoutX="582.0" layoutY="212.0" mnemonicParsing="false" onAction="#getSearchBtn" opacity="0.72" prefHeight="39.0" prefWidth="114.0" style="-fx-font-size: 14px; -fx-background-color: #2b4356; -fx-text-fill: white; -fx-cursor: hand; -fx-border-radius: 50px;" text="Search" textFill="#a47832c4">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="75.0" fitWidth="79.0" layoutX="40.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/assets/logo.png" />
+         </image>
+      </ImageView>
+      <Line endX="725.5999755859375" layoutX="156.0" layoutY="117.0" startX="-83.00001525878906" />
+<Button fx:id="btnBack" layoutX="22.0" layoutY="114.0" mnemonicParsing="false" onAction="#getBackBtn" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #d9d9d9; -fx-cursor: hand; -fx-text-fill: red;" text="Back">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" preserveRatio="true">
+               <image>
+                  <Image url="@/assets/arrow_back_red.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>         
+              <Label layoutX="590.0" layoutY="58.0" text="Order" />
+      <Label layoutX="320.0" layoutY="59.0" text="Home" />
+      <Label layoutX="476.0" layoutY="58.0" text="Search" />
+      <Label layoutX="435.0" layoutY="58.0" text="Info" />
+      <Label layoutX="374.0" layoutY="59.0" text="Borrow" />
+      <Label layoutX="534.0" layoutY="59.0" text="Return" />
+      <Label fx:id="lblServerMessage" layoutX="351.0" layoutY="185.0" text="" />
+      <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="320.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/assets/home_black.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="381.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/assets/book_black.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="432.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/assets/person_black.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="478.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/assets/search_black.png" />
+         </image>
+      </ImageView>
+     
+      <ImageView fitHeight="28.0" fitWidth="33.0" layoutX="534.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/assets/return_green.png" />
+         </image>
+      </ImageView>
+          <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="590.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/assets/cart_black.png" />
+         </image>
+      </ImageView>
+      
+
+   
+    </children>
+</AnchorPane>

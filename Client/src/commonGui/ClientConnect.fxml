@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="611.0" prefWidth="935.0" style="-fx-background-color: #d9d9d9; -fx-padding: 20; -fx-border-color: #2b4356; -fx-border-radius: 10px; -fx-border-width: 10px;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="commonGui.ClientConnectController">
+    <children>
+        <TextField fx:id="txtId" layoutX="457.0" layoutY="202.0" prefHeight="18.0" prefWidth="50.0" style="-fx-pref-width: 150px; -fx-font-size: 14px;" />
+
+        <!-- Connection Status -->
+        <Label fx:id="conStatus" layoutX="100.0" layoutY="150.0" style="-fx-font-size: 12px;" text="" textFill="#e74c3c" />
+      <Label layoutX="257.0" layoutY="58.0" prefHeight="76.0" prefWidth="414.0" text="Connect to Server" wrapText="true">
+         <font>
+            <Font name="Footlight MT Light" size="57.0" />
+         </font>
+      </Label>
+      <Label layoutX="284.0" layoutY="205.0" prefHeight="23.0" prefWidth="138.0" text="Enter Server IP:" wrapText="true">
+         <font>
+            <Font name="Footlight MT Light" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnConnect" layoutX="501.0" layoutY="294.0" mnemonicParsing="false" onAction="#getBtnConnect" opacity="0.72" prefHeight="39.0" prefWidth="94.0" style="-fx-font-size: 14px; -fx-background-color: #2b4356; -fx-text-fill: white; -fx-cursor: hand; -fx-border-radius: 50px;" text="Connect" textFill="#a47832c4">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnExit" layoutX="340.0" layoutY="294.0" mnemonicParsing="false" onAction="#getExitBtn" opacity="0.72" prefHeight="39.0" prefWidth="71.0" style="-fx-font-size: 14px; -fx-background-color: #ff6666; -fx-text-fill: white; -fx-cursor: hand; -fx-border-radius: 50px;" text="Exit" textFill="#a47832c4" />
+    </children>
+</AnchorPane>

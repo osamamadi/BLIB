@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="755.0" prefWidth="1023.0" style="-fx-background-color: #d9d9d9;; -fx-padding: 20;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="librarianGui.ClientLibSubscribtionStatusReportsController">
+    <children>
+        <Label fx:id="libMsg" layoutX="186.0" layoutY="78.0" prefHeight="42.0" prefWidth="613.0" style="-fx-font-size: 14px; -fx-text-fill: #ff3377; -fx-background-color: #ecf0f1; -fx-padding: 10px; -fx-border-color: #bdc3c7; -fx-border-radius: 5px; -fx-background-radius: 5px; -fx-text-alignment: center; -fx-alignment: center;" wrapText="true" />
+     <Button fx:id="btnBack" layoutX="28.0" layoutY="99.0" mnemonicParsing="false" onAction="#getBackBtn" style="-fx-background-color: transparent; -fx-text-fill: #e74c3c; -fx-font-size: 14px; -fx-cursor: hand;" text="Back">
+            <graphic>
+                <ImageView fitHeight="20.0" fitWidth="20.0" preserveRatio="true">
+                    <image>
+                        <Image url="@/assets/arrow_back_red.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+            
+        </Button>
+        <PieChart fx:id="pcSbscriptionStatus" layoutX="282.0" layoutY="129.0" prefHeight="278.0" prefWidth="443.0" style="-fx-background-color: lightblue;" />
+        <BarChart fx:id="lcSubscriptionStatus" layoutX="136.0" layoutY="424.0" prefHeight="266.0" prefWidth="714.0">
+            <xAxis>
+                <CategoryAxis fx:id="days" side="BOTTOM" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis fx:id="numberOfSubscripers" side="LEFT" />
+            </yAxis>
+        </BarChart>
+      <Label layoutX="271.0" layoutY="22.0" prefHeight="54.0" prefWidth="466.0" text="Subscriber Frozen Report" wrapText="true">
+         <font>
+            <Font name="Footlight MT Light" size="44.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="75.0" fitWidth="79.0" layoutX="22.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/assets/logo.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

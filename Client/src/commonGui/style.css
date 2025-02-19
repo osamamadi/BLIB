@@ -1,0 +1,15 @@
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-color:#2b4356
+    }
+    /* Style for transparent rows in TableView */
+.table-row-cell {
+    -fx-background-color: transparent !important;
+}
+.table-view .table-cell {
+    -fx-alignment: CENTER;
+}
+.table-view {
+	 -fx-text-fill: white;
+}

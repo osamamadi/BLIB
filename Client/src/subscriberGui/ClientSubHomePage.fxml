@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane prefHeight="611.0" prefWidth="935.0" style="-fx-background-color: #d9d9d9; -fx-padding: 20;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="subscriberGui.ClientSubHomeController">
+    <children>
+<!-- Messages Button -->
+        <Button fx:id="btnMessages" layoutX="762.0" layoutY="38.0" mnemonicParsing="false" onAction="#showMessages" prefHeight="34.0" prefWidth="144.0" style="-fx-font-size: 14px; -fx-background-color: #2eb8b8; -fx-text-fill: white; -fx-cursor: hand;" text="" />
+        <!-- Welcome Message -->
+        <Label fx:id="lblWelcomeMessage" layoutX="95.0" layoutY="27.0" prefHeight="34.0" prefWidth="247.0" style="-fx-font-size: 14px; -fx-text-fill: #2c3e50;" text="Welcome  [username]" />
+
+        <!-- Buttons -->
+        <Button fx:id="Search_Book_Btn" layoutX="292.0" layoutY="441.0" mnemonicParsing="false" onAction="#gotoSearchBookPage" prefHeight="33.0" prefWidth="151.0" style="-fx-font-size: 14px; -fx-background-color: #2b4356; -fx-text-fill: white; -fx-cursor: hand;" text="Search Book" textFill="#d74d4d" />
+
+        <Button fx:id="Personal_Card_Btn" layoutX="494.0" layoutY="441.0" mnemonicParsing="false" onAction="#gotoPersonalCard" prefHeight="34.0" prefWidth="163.0" style="-fx-font-size: 14px; -fx-background-color: #2b4356; -fx-text-fill: white; -fx-cursor: hand; -fx-border-radius: 550px; -fx-border-width: 20px;" text="Personal Card" />
+      <ImageView fitHeight="245.0" fitWidth="1038.0" layoutX="43.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true" style="-fx-fit-width: 1300px;">
+         <image>
+            <Image url="@/assets/SubsHome.jpeg" />
+         </image>
+      </ImageView>
+      <Line endX="748.0" layoutX="155.0" layoutY="80.0" startX="-118.19999694824219" />
+      <ImageView fitHeight="84.0" fitWidth="67.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/assets/logo.png" />
+         </image>
+      </ImageView>
+      
+      
+   
+
+
+      <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="769.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/assets/message_white.png" />
+         </image>
+      </ImageView>
+
+      
+      <Button fx:id="Log_Out_Btn" layoutX="14.0" layoutY="88.0" mnemonicParsing="false" onAction="#Logout" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #d9d9d9; -fx-text-fill: red; -fx-cursor: hand;" text="Logout">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" preserveRatio="true">
+               <image>
+                  <Image url="@/assets/arrow_back_red.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      
+                <Label layoutX="590.0" layoutY="58.0" text="Order" />
+      <Label layoutX="320.0" layoutY="59.0" text="Home" />
+      <Label layoutX="476.0" layoutY="58.0" text="Search" />
+      <Label layoutX="435.0" layoutY="58.0" text="Info" />
+      <Label layoutX="374.0" layoutY="59.0" text="Borrow" />
+      <Label layoutX="534.0" layoutY="59.0" text="Return" />
+      <Label fx:id="lblServerMessage" layoutX="351.0" layoutY="185.0" text="" />
+      <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="320.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/assets/home_green.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="381.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/assets/book_black.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="432.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/assets/person_black.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="478.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/assets/search_black.png" />
+         </image>
+      </ImageView>
+     
+      <ImageView fitHeight="28.0" fitWidth="33.0" layoutX="534.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/assets/return_black.png" />
+         </image>
+      </ImageView>
+          <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="590.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/assets/cart_black.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="30.0" layoutX="299.0" layoutY="444.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Shared_Data/src/assets/search_white.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="30.0" layoutX="504.0" layoutY="444.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Shared_Data/src/assets/person_white.png" />
+         </image>
+      </ImageView>
+
+    </children>
+</AnchorPane>

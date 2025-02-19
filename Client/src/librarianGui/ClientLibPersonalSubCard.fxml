@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="611.0" prefWidth="935.0" style="-fx-background-color: #d9d9d9; -fx-padding: 20; -fx-border-color: #2b4356; -fx-border-radius: 10px; -fx-border-width: 10px;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="librarianGui.ClientLibPersonalSubCardController">
+   <children>
+      <ImageView fitHeight="75.0" fitWidth="79.0" layoutX="23.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/assets/logo.png" />
+         </image>
+      </ImageView>
+      <Line endX="760.199951171875" layoutX="131.0" layoutY="101.0" startX="-83.00001525878906" />
+      <Label layoutX="364.0" layoutY="120.0" prefHeight="54.0" prefWidth="252.0" text="Personal Card" wrapText="true">
+         <font>
+            <Font name="Footlight MT Light" size="44.0" />
+         </font>
+      </Label>
+      <Label layoutX="127.0" layoutY="203.0" prefHeight="30.0" prefWidth="151.0" text="Personal ID:" wrapText="true">
+         <font>
+            <Font name="Footlight MT Light" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="532.0" layoutY="351.0" prefHeight="30.0" prefWidth="118.0" text="Password:" wrapText="true">
+         <font>
+            <Font name="Footlight MT Light" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="532.0" layoutY="302.0" prefHeight="30.0" prefWidth="118.0" text="Last name:" wrapText="true">
+         <font>
+            <Font name="Footlight MT Light" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="533.0" layoutY="207.0" prefHeight="30.0" prefWidth="79.0" text="Email:" wrapText="true">
+         <font>
+            <Font name="Footlight MT Light" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="127.0" layoutY="346.0" prefHeight="30.0" prefWidth="142.0" text="Username:" wrapText="true">
+         <font>
+            <Font name="Footlight MT Light" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="532.0" layoutY="253.0" prefHeight="30.0" prefWidth="127.0" text="First Name:" wrapText="true">
+         <font>
+            <Font name="Footlight MT Light" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="533.0" layoutY="398.0" prefHeight="30.0" prefWidth="176.0" text="PhoneNumber:" wrapText="true">
+         <font>
+            <Font name="Footlight MT Light" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="127.0" layoutY="248.0" prefHeight="30.0" prefWidth="118.0" text="Status:" wrapText="true">
+         <font>
+            <Font name="Footlight MT Light" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="127.0" layoutY="294.0" prefHeight="30.0" prefWidth="151.0" text="Late Returns:" wrapText="true">
+         <font>
+            <Font name="Footlight MT Light" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="127.0" layoutY="393.0" prefHeight="30.0" prefWidth="230.0" text="Sub Number:" wrapText="true">
+         <font>
+            <Font name="Footlight MT Light" size="27.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnDisplayReturn" layoutX="389.0" layoutY="546.0" mnemonicParsing="false" onAction="#viewReturns" prefHeight="50.0" prefWidth="200.0" style="-fx-font-size: 16px; -fx-background-color: #2b4356; -fx-text-fill: white; -fx-cursor: hand;" text="Return History" />
+      
+      <Button fx:id="btnDisplayBorrow" layoutX="201.0" layoutY="473.0" mnemonicParsing="false" onAction="#viewBorrows" prefHeight="50.0" prefWidth="200.0" style="-fx-font-size: 16px; -fx-background-color: #2b4356; -fx-text-fill: white; -fx-cursor: hand;" text="Borrow History" />
+      <Button fx:id="btnDisplayOrders" layoutX="583.0" layoutY="475.0" mnemonicParsing="false" onAction="#gotoOrderHistory" prefHeight="50.0" prefWidth="200.0" style="-fx-font-size: 16px; -fx-background-color: #2b4356; -fx-text-fill: white; -fx-cursor: hand;" text="Orders History" />
+     <Label layoutX="645.0" layoutY="70.0" text="Add" />
+      <Label layoutX="328.0" layoutY="70.0" text="Home" />
+      <Label layoutX="539.0" layoutY="70.0" text="Report" />
+      <Label layoutX="478.0" layoutY="70.0" text="Search" />
+      <Label layoutX="437.0" layoutY="70.0" text="Info" />
+      <Label layoutX="377.0" layoutY="70.0" text="Borrow" />
+      <Label layoutX="593.0" layoutY="70.0" text="Return" />
+      <Label fx:id="lblServerMessage" layoutX="351.0" layoutY="185.0" text="" />
+      <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="329.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/assets/home_black.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="381.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/assets/book_green.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="432.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/assets/person_black.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="478.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/assets/search_black.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="30.0" layoutX="541.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/assets/report_black.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="33.0" layoutX="597.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/assets/return_black.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="641.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/assets/add_black.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="409.0" layoutY="232.0" prefHeight="30.0" prefWidth="54.0" wrapText="true">
+         <font>
+            <Font name="Footlight MT Light" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblWelcome" layoutX="112.0" layoutY="43.0" prefHeight="33.0" prefWidth="158.0" style="-fx-font-size: 14px; -fx-text-fill: #2c3e50;" text="Welcome  [username]" />
+      <Button layoutX="23.0" layoutY="117.0" mnemonicParsing="false" onAction="#goBack" prefHeight="30.0" prefWidth="100.0" style="-fx-cursor: hand;-fx-background-color: #d9d9d9; -fx-text-fill: red;" text="Back">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" preserveRatio="true">
+               <image>
+                  <Image url="@/assets/arrow_back_red.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+    
+    
+      <Button fx:id="btnUpdate" layoutX="437.0" layoutY="481.0" mnemonicParsing="false" onAction="#getUpdateBtn" prefHeight="34.0" prefWidth="106.0" style="-fx-font-size: 14px; -fx-background-color: #2eb8b8; -fx-text-fill: white; -fx-cursor: hand;" text="Update" />
+      <Label fx:id="lblSubscriberNumber" layoutX="282.0" layoutY="389.0" prefHeight="30.0" prefWidth="142.0" text="" wrapText="true">
+         <font>
+            <Font name="Footlight MT Light" size="27.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="596.0" layoutY="485.0">
+         <image>
+            <Image url="@/assets/cart_white.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="35.0" layoutX="207.0" layoutY="487.0">
+         <image>
+            <Image url="@/assets/book_white.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="438.0" layoutY="485.0">
+         <image>
+            <Image url="@/assets/pen_white.png" />
+         </image>
+      </ImageView>
+       <Label fx:id="lblStatus" layoutX="283.0" layoutY="247.0" prefHeight="28.0" prefWidth="158.0" text="" wrapText="true">
+         <font>
+            <Font name="Footlight MT Light" size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtLateReturns" layoutX="283.0" layoutY="291.0" prefHeight="28.0" prefWidth="158.0" text="" />
+      <TextField fx:id="txtUsername" layoutX="283.0" layoutY="347.0" prefHeight="28.0" prefWidth="158.0" text="" />
+      <TextField fx:id="txtEmail" layoutX="699.0" layoutY="208.0" prefHeight="28.0" prefWidth="158.0" text="" />
+      <TextField fx:id="txtFName" layoutX="699.0" layoutY="254.0" prefHeight="28.0" prefWidth="158.0" text="" />
+      <TextField fx:id="txtLName" layoutX="699.0" layoutY="305.0" prefHeight="28.0" prefWidth="158.0" text="" />
+      <TextField fx:id="txtPassword" layoutX="699.0" layoutY="352.0" prefHeight="28.0" prefWidth="158.0" text="" />
+      <TextField fx:id="txtPhoneNum" layoutX="699.0" layoutY="398.0" prefHeight="28.0" prefWidth="158.0" text="" />
+      <Label fx:id="lblServerMessage" layoutX="352.0" layoutY="435.0" prefHeight="30.0" prefWidth="492.0" text="" wrapText="true">
+         <font>
+            <Font name="Footlight MT Light" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblId" layoutX="282.0" layoutY="198.0" prefHeight="30.0" prefWidth="142.0" text="" wrapText="true">
+         <font>
+            <Font name="Footlight MT Light" size="27.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="41.0" fitWidth="33.0" layoutX="403.0" layoutY="555.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/assets/return.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

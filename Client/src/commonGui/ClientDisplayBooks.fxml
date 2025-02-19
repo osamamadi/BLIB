@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="611.0" prefWidth="935.0" style="-fx-background-color: #d9d9d9; -fx-padding: 20; -fx-border-color: #2b4356; -fx-border-radius: 10px; -fx-border-width: 10px;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="commonGui.ClientDisplayBooksController">
+    <children>
+        <Line endX="803.4000244140625" layoutX="136.0" layoutY="97.0" startX="-83.00001525878906" />
+        
+       
+        <!-- Search TextField -->
+        <TextField fx:id="txtsearch" layoutX="424.0" layoutY="177.0" prefHeight="28.0" prefWidth="158.0" />
+        <ComboBox fx:id="topicDropdown" layoutX="250.0" layoutY="170.0" prefHeight="28.0" prefWidth="150.0" style="-fx-font-size: 14px; -fx-padding: 5px;" />
+
+        <!-- Subscriber Table -->
+       <TableView fx:id="bookTable" layoutX="74.0" layoutY="242.0" prefHeight="314.0" prefWidth="824.0" style="-fx-cursor: hand;-fx-background-color: #d9d9d9; -fx-border-radius: 5px; -fx-border-color: #cccccc;">
+    <columns>
+        <TableColumn fx:id="book_idColumn" prefWidth="130.4000244140625" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: white; -fx-background-color: #34495e;" text="ID" />
+        <TableColumn fx:id="book_nameColumn" prefWidth="177.59999084472656" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: white; -fx-background-color: #34495e;" text="Book Name" />
+        <TableColumn fx:id="book_topicColumn" prefWidth="164.0" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: white; -fx-background-color: #34495e;" text="Book Topic" />
+        <TableColumn fx:id="book_descriptionColumn" prefWidth="206.4000244140625" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: white; -fx-background-color: #34495e;" text="Description" />
+        <TableColumn fx:id="book_copiesColumn" prefWidth="142.39996337890625" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: white; -fx-background-color: #34495e;" text="Copies" />
+    </columns>
+</TableView>    
+        <Label layoutX="361.0" layoutY="98.0" prefHeight="54.0" prefWidth="230.0" text="Search Book" wrapText="true">
+            <font>
+                <Font name="Footlight MT Light" size="44.0" />
+            </font>
+        </Label>
+        
+        <ImageView fitHeight="75.0" fitWidth="79.0" layoutX="20.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@/assets/logo.png" />
+            </image>
+        </ImageView>
+        
+        <Button fx:id="btnSearch" layoutX="600.0" layoutY="173.0" mnemonicParsing="false" onAction="#getSearchBtn" prefHeight="34.0" prefWidth="106.0" style="-fx-font-size: 14px; -fx-background-color: #2eb8b8; -fx-text-fill: white; -fx-cursor: hand;" text="Search" />
+        
+        <ImageView fitHeight="23.0" fitWidth="25.0" layoutX="609.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@/assets/search_white.png" />
+            </image>
+        </ImageView>
+        
+               <Label layoutX="590.0" layoutY="58.0" text="Order" />
+      <Label layoutX="320.0" layoutY="59.0" text="Home" />
+      <Label layoutX="476.0" layoutY="58.0" text="Search" />
+      <Label layoutX="435.0" layoutY="58.0" text="Info" />
+      <Label layoutX="374.0" layoutY="59.0" text="Borrow" />
+      <Label layoutX="534.0" layoutY="59.0" text="Return" />
+      <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="320.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/assets/home_black.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="381.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/assets/book_black.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="432.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/assets/person_black.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="478.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/assets/search_green.png" />
+         </image>
+      </ImageView>
+     
+      <ImageView fitHeight="28.0" fitWidth="33.0" layoutX="534.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/assets/return_black.png" />
+         </image>
+      </ImageView>
+          <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="590.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/assets/cart_black.png" />
+         </image>
+      </ImageView>
+
+      <ImageView fitHeight="62.0" fitWidth="60.0" layoutX="868.0" layoutY="262.0">
+         <image>
+            <Image url="@/assets/double_click.png" />
+         </image>
+      </ImageView>
+	<Button fx:id="btnBack" layoutX="22.0" layoutY="114.0" mnemonicParsing="false" onAction="#getBackBtn" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #d9d9d9; -fx-text-fill: red; -fx-cursor: hand;" text="Back">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" preserveRatio="true">
+               <image>
+                  <Image url="@/assets/arrow_back_red.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="74.0" layoutY="208.0" prefHeight="38.0" prefWidth="244.0" text="click twice to get book details" wrapText="true">
+         <font>
+            <Font name="Footlight MT Light" size="19.0" />
+         </font>
+      </Label>     
+    </children>
+</AnchorPane>

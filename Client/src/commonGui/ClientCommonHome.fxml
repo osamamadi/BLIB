@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="611.0" prefWidth="935.0" style="-fx-background-color: #d9d9d9; -fx-padding: 20; -fx-border-width: 10px; -fx-border-radius: 3px;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="commonGui.ClientCommonHomeController">
+    <children>
+
+        <!-- Password -->
+        <Label fx:id="lbl_password" layoutX="528.0" layoutY="243.0" style="-fx-text-fill: #425479;" />
+
+        <!-- Navigation Button -->
+        <Button fx:id="btnLogin" layoutX="692.0" layoutY="373.0" mnemonicParsing="false" onAction="#LoginBtn" opacity="0.78" style="-fx-font-size: 14px; -fx-background-color: #2b4356; -fx-text-fill: white; -fx-cursor: hand; -fx-border-radius: 50px; -fx-font-family: Footlight MT Light;" text="Login" textFill="#a47832c4">
+         <font>
+            <Font name="Footlight MT Light" size="12.0" />
+         </font></Button>
+ 
+         <Button fx:id="btnSearchBook" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="657.0" layoutY="430.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#gotoSearchBookPage" opacity="0.78" prefHeight="33.0" prefWidth="136.0" style="-fx-font-size: 14px; -fx-background-color: #2b4356; -fx-text-fill: white; -fx-border-radius: 5px; -fx-cursor: hand; -fx-alignment: CENTER_LEFT; -fx-font-family: Footlight MT Light;" text="Search a book" />
+         
+         <ImageView fitHeight="481.0" fitWidth="497.0" layoutX="14.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+        <Image url="@/assets/CommonHomePageImage.jpeg" />
+            </image>
+         </ImageView>
+
+         <TextField fx:id="txtusername" layoutX="673.0" layoutY="262.0" prefHeight="28.0" prefWidth="158.0" />
+         <TextField fx:id="txtpassword" layoutX="673.0" layoutY="302.0" prefHeight="28.0" prefWidth="158.0" />
+
+
+         <Line endX="-35.98321533203125" endY="349.9341125488281" layoutX="563.0" layoutY="180.0" startX="-35.98321533203125" startY="-83.70000457763672" stroke="#34417e" strokeWidth="10.0" />
+         <Line endX="100.0" startX="-100.0" />
+         <Line endX="-35.98321533203125" endY="330.29998779296875" layoutX="563.0" layoutY="198.0" startX="-35.98321533203125" startY="-100.0999984741211" stroke="#d19a19" strokeWidth="5.0" />
+
+         <ImageView fitHeight="20.0" fitWidth="25.0" layoutX="805.0" layoutY="266.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+        <Image url="@/assets/person_black.png" />
+            </image>
+         </ImageView>
+
+
+
+         <ImageView fitHeight="75.0" fitWidth="79.0" layoutX="30.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+        <Image url="@/assets/logo.png" />
+            </image>
+         </ImageView>
+
+         <Label layoutX="580.0" layoutY="102.0" prefHeight="54.0" prefWidth="278.0" style="-fx-text-fill: #2b4356;" text="Braude Library" wrapText="true">
+            <font>
+               <Font name="Footlight MT Light" size="44.0" />
+            </font>
+         </Label>
+
+         <Label layoutX="639.0" layoutY="168.0" prefHeight="38.0" prefWidth="158.0" style="-fx-text-fill: #2b4356;" text="Home Page" wrapText="true">
+            <font>
+               <Font name="Footlight MT Light" size="33.0" />
+            </font>
+         </Label>
+
+         <Label layoutX="571.0" layoutY="264.0" prefHeight="23.0" prefWidth="95.0" style="-fx-text-fill: #2b4356;" text="Username:" wrapText="true">
+            <font>
+               <Font name="Footlight MT Light" size="21.0" />
+            </font>
+         </Label>
+
+         <Label layoutX="574.0" layoutY="311.0" prefHeight="23.0" prefWidth="89.0" style="-fx-text-fill: #2b4356;" text="Password:" wrapText="true">
+            <font>
+               <Font name="Footlight MT Light" size="21.0" />
+            </font>
+         </Label>
+
+         <ImageView fitHeight="20.0" fitWidth="25.0" layoutX="805.0" layoutY="304.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@/assets/password_black.png"  />
+            </image>
+         </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="25.0" layoutX="673.0" layoutY="437.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/assets/search_white.png"  />
+         </image>
+      </ImageView>
+      <Label fx:id="lblServerMessage" layoutX="775.0" layoutY="378.0" prefHeight="23.0" prefWidth="180.0" style="-fx-text-fill: #2b4356; -fx-font-size: 10px;" wrapText="true">
+         <font>
+            <Font name="Footlight MT Light" size="21.0" />
+         </font>
+      </Label>
+      <Button layoutX="118.0" layoutY="34.0" mnemonicParsing="false" onAction="#exitBtn" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #d9d9d9;-fx-cursor: hand; -fx-text-fill: red;" text="Exit">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" preserveRatio="true">
+               <image>
+                  <Image url="@/assets/arrow_back_red.png"  />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+
+    </children>
+</AnchorPane>
