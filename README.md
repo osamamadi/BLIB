@@ -48,9 +48,9 @@ Instructions
 
 👥 Contributors
 
-- [Osama Madi](https://github.com/osamamadi) – Project lead  
+- [Osama Madi](https://github.com/osamamadi) – Software Engineering Student at Braude College  
 - [HelalAli31](https://github.com/HelalAli31) – Full-stack developer at RidoSoft  
-- [baderboshnak](https://github.com/baderboshnak) – Student at Braude College  
+- [baderboshnak](https://github.com/baderboshnak) – Software Engineering Student at Braude College  
 
 Images: 
 ![Screenshot 2025-07-07 173402](https://github.com/user-attachments/assets/cbe71f37-542b-44c3-a8ce-80883713420d)
